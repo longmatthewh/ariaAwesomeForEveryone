@@ -41,6 +41,12 @@
     color: #24859f;
     text-shadow: none;
 }
+.reveal .dark-blue-bg {
+    background: rgba(36,133,159,.25);
+    border-radius: 10px;
+    padding:10px;
+}
+
 
 .reveal .dark-grey {
     color:#333;
@@ -87,7 +93,8 @@
 
 }
 
-.reveal blockquote em {
+.reveal blockquote em,
+.reveal td em{
     color: #24859f;
 }
 
@@ -106,8 +113,9 @@
     max-height: none;
 }
 
-.reveal pre.wide code {
-    margin: 0 -170px;
+.reveal pre.wide code,
+.reveal div.wide {
+    margin: 0 -142px;
 }
 
 .reveal pre .string {
@@ -115,7 +123,7 @@
 }
 
 .reveal pre .number {
-    color:#01bbc0;
+    color:#007C81;
 }
 
 .reveal pre .comment {
@@ -127,15 +135,30 @@
 }
 
 .reveal pre .tag, .tag {
-    color:#aaa;
+    color:#888;
 }
 
 .reveal .highlight pre .tag {
     background:rgba(255,255,0,.2);
 }
 
-.reveal pre .tag .title, .tag .title {
-    color: #01bbc0;
+.reveal pre .css .attr_selector {
+    color:#945b5b;
+}
+
+.reveal pre .css .rule {
+    color: #2a4098;
+}
+
+.reveal pre .css .rules .value,
+.reveal pre .css .rules .value .number{
+    color: #C78100;
+}
+
+
+.reveal pre .tag .title, .tag .title,
+.reveal pre .css .tag {
+    color: #007C81;
 }
 
 .reveal pre .tag .attribute, .tag .attribute {
@@ -147,7 +170,7 @@
 }
 
 .reveal pre.highlighted {
-    border:solid 2px #01bbc0;
+    border:solid 2px #019CA1;
     border-radius: 10px;
     padding:10px;
     margin:-11px;
@@ -169,7 +192,7 @@
 
 #done-right {
     font-family: 'Permanent Marker', cursive;
-    transform: rotate(-30deg);
+    transform: rotate(-20deg);
     position:absolute;
     top:120px;
     left:70%;
@@ -196,6 +219,7 @@
     font-family: courier;
     padding: 20px;
     text-shadow: 2px 2px #000;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 button {
@@ -234,6 +258,21 @@ button:focus, button:hover {
     text-align: left;
 }
 
+.reveal table#key-strokes {
+    font-size:80%;
+}
+
+.reveal table#key-strokes td {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+
+.reveal table#key-strokes td.pos-right {
+    min-width:200px;
+    text-align: right;
+}
+
 .reveal table th[scope="col"] {
     width:33%;
 }
@@ -241,6 +280,27 @@ button:focus, button:hover {
 .reveal table th[scope="row"] img {
     height:.8em;
     margin: 0;
+}
+
+.reveal .fa-li {
+    left: -1.8em;
+}
+
+.reveal ul.fa-ul {
+    list-style-type: none;
+}
+
+.fa-bolt {
+    color:orange;
+}
+
+.reveal .smaller-text {
+    font-size: 45%;
+}
+
+
+.reveal .smaller-text .large-text{
+    font-size: 8em;
 }
 
 .reveal i.fa {
@@ -259,8 +319,21 @@ button:focus, button:hover {
     padding: 10px;
 }
 
+#browser-survey {
+    font-size:.8em;
+    margin:0 auto;
+}
 
-.reveal table thead td {
+#browser-survey td {
+    text-align: left;
+}
+
+#browser-survey th {
+    color: #24859f;
+}
+
+.reveal table thead td,
+.reveal table caption {
     text-align: left;
     padding-bottom:10px;
     background: #eee;
@@ -277,6 +350,12 @@ button:focus, button:hover {
     position: absolute;
     right: 0;
     top: 100px;
+}
+
+.abs-right-top-60 {
+    position: absolute;
+    right: 0;
+    top: -60px;
 }
 
 .reveal img.centered { margin: 0 auto;display:block;}
@@ -345,4 +424,134 @@ h1 {
 
 #tabs .ui-state-hover a {
     color: #3875D7;
+}
+
+
+#simple-list-example i.fa {
+    color: #444;
+    margin-right: 5px;
+}
+
+.reveal ul[role="tree"] {
+    list-style-type: none;
+    display:block;
+}
+
+.reveal ul[role="tree"]:focus {
+    outline: 1px dotted orange;
+}
+
+.reveal ul[role="tree"] li {
+    list-style-type: none;
+}
+
+.reveal ul[role="tree"] li[aria-selected="true"] {
+    outline: none;
+}
+
+.reveal ul[role="tree"] li[aria-expanded="false"] > ul {
+    display: none;
+}
+
+.reveal ul[role="tree"] li[aria-expanded="true"] > ul {
+    display: block;
+}
+
+.reveal .font-awesome-tree {
+    line-height: 24px;
+}
+
+.reveal .font-awesome-tree > ul {
+    padding: 5px 0 5px 30px;
+    margin: 8px 0 0 0;
+}
+
+.reveal .font-awesome-tree .at-toggle {
+    float: left;
+    margin-right: 4px;
+    line-height: 42px;
+    color: orange;
+}
+
+.reveal .font-awesome-tree li {
+    line-height: 42px;
+}
+
+.reveal .font-awesome-tree .at-has-children {
+    margin-left: -20px;
+}
+
+.reveal .font-awesome-tree li {
+    padding-left: 10px;
+    border-left: dotted 1px transparent;
+    margin-left: -1px;
+}
+
+.reveal .font-awesome-tree li .tree-item-label {
+    padding: 0 2px;
+    border: dotted 1px transparent
+}
+
+.reveal .font-awesome-tree li[aria-selected="true"] {
+    border: none;
+    outline: none;
+    color: orange;
+    border-left: dotted 1px #ccc;
+}
+
+#guitar-brands-example,
+#guitar-brands-example2{
+    margin-top: -350px;
+}
+
+.reveal .font-awesome-tree li[aria-selected="true"] > .tree-item-label {
+    border: dotted 1px orange;
+    background-color: #fff;
+}
+
+.reveal .font-awesome-tree li[aria-selected="true"] ul {
+    color: #000;
+}
+
+.reveal #other-code-example-real li .tree-item-label {
+    padding: 0 3px;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.reveal #other-code-example-real li[aria-selected="true"] {
+    color: #fff;
+    border-left: dotted 1px transparent;
+}
+
+.reveal #other-code-example-real li[aria-selected="true"] > .tree-item-label {
+    border: none;
+    background-color: orange;
+}
+
+.reveal #code-example-real {
+    margin-top: 5px;
+}
+div.button-sample {
+    background: #ececec;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ccc;
+    color: #666;
+    height: 35px;
+    line-height: 35px;
+    padding: 10px;
+    text-align: center;
+    min-width: 35px;
+    display:inline-block;
+    margin-right:10px;
+}
+
+div.button-sample span {
+    font-size:18px;
+    padding:0 12px;
 }

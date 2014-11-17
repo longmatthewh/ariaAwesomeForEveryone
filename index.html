@@ -136,20 +136,20 @@
                 <section data-background="#fff" class="slide-align-left">
                     <div class="tag medium-text"><code>&lt;<span class="title">div</span>&gt;</code></div>
                     <blockquote class="dark-grey">
-                        “…has <em>no special meaning</em> at all…<br>
-                        Authors are strongly encouraged to view the <code class="tag">&lt;<span class="title">div</span>&gt;</code> element as <em>an element of last resort</em>…use of more appropriate elements…leads to better accessibility for readers and easier maintainability for authors.”
+                        "…has <em>no special meaning</em> at all…<br>
+                        Authors are strongly encouraged to view the <code class="tag">&lt;<span class="title">div</span>&gt;</code> element as <em>an element of last resort</em>…use of more appropriate elements…leads to better accessibility for readers and easier maintainability for authors."
                     </blockquote>
                 </section>
 
                 <section data-background="#fff" class="slide-align-left">
                     <div class="tag medium-text"><code>&lt;<span class="title">span</span>&gt;</code></div>
                     <blockquote class="dark-grey">
-                        “The <code class="tag">&lt;<span class="title">span</span>&gt;</code> element <em>doesn't mean anything</em> on its own…”
+                        "The <code class="tag">&lt;<span class="title">span</span>&gt;</code> element <em>doesn't mean anything</em> on its own…"
                     </blockquote>
                 </section>
 
                 <section data-background="img/structure.jpg">
-                    <ul id="semantic-elements" class="plain-list medium-text two-col">
+                    <ul id="semantic-elements" class="fragment fade-in plain-list medium-text two-col">
                         <li>&lt;article&gt;</li>
                         <li>&lt;aside&gt;</li>
                         <li>&lt;button&gt;</li>
@@ -165,6 +165,48 @@
                         <li>&lt;time&gt;</li>
                         <li>&lt;ul&gt;</li>
                     </ul>
+                </section>
+
+                <section class="highlight" data-transition="none" data-background="#fff">
+<pre><code data-trim class="xml">
+<div class="header">
+    <div class="title">The DIV Tag</div>
+    <div class="intro">The DIV element is the most versatile in HTML.</div>
+</div>
+<div class="main">
+    I love to use DIV tags whenever I can. They are so great! Here's some
+    reasons why I love them.
+    <div class="list">
+        <div>Its name is only 3 letters long.</div>
+        <div>They're so flexible&mdash;I can style them however I want.</div>
+        <div>DIV elements are supported by all browsers.</div>
+    </div>
+</div>
+<div class="footer">
+    Copyright 2014 The DIVmeister
+</div>
+</code></pre>
+                </section>
+
+                <section class="highlight" data-transition="none" data-background="#fff">
+<pre><code data-trim class="xml">
+<header>
+    <h1>The DIV Tag</h1>
+    The DIV element is the most versatile in HTML.
+</header>
+<main>
+    I love to use DIV tags whenever I can. They are so great! Here's some
+    reasons why I love them.
+    <ul>
+        <li>Its name is only 3 letters long.</li>
+        <li>They're so flexible&mdash;I can style them however I want.</li>
+        <li>DIV elements are supported by all browsers.</li>
+    </ul>
+</main>
+<footer>
+    Copyright 2014 The DIVmeister
+</footer>
+</code></pre>
                 </section>
 
                 <section data-background="img/anchor-button.jpg">
@@ -190,7 +232,7 @@
                     <h2 class="dark-blue">Navigation</h2>
                     <div class="fragment fade-in">
                         <div class="tag medium-text"><code>&lt;<span class="title">div</span>&gt;&lt;<span class="title">span</span>&gt;</code></div>
-                        <div class="tag medium-text"><code><span class="attribute">tabindex</span>=<span class="value">"0"</span></code></div>
+                        <div class="fragment fade-in tag medium-text"><code><span class="attribute">tabindex</span>=<span class="value">"0"</span></code></div>
                     </div>
                     <div class="fragment fade-in">
                         <div class="tag medium-text"><code>&lt;<span class="title">a</span>&gt;</code></div>
@@ -202,7 +244,7 @@
                     <h2 class="dark-blue">Visible Focus</h2>
                     <button class="medium-text">I'm a Button</button>
                     <div class="fragment fade-in">
-                        <p class="dark-grey"><code class="tag"><span class="value">:focus</span></code> not implemented consistently across browsers.</p>
+                        <p class="dark-grey"><code class="tag"><span class="value">*:focus</span></code> not implemented consistently across browsers.</p>
                     </div>
                 </section>
 
@@ -210,11 +252,11 @@
                     <h2 class="dark-blue">Enter + SPACE</h2>
                     <div class="fragment fade-in">
                         <div class="tag medium-text"><code>&lt;<span class="title">div</span>&gt;&lt;<span class="title">span</span>&gt;</code></div>
-                        <p class="dark-grey">Need both to behave consistently in all browsers</p>
+                        <p class="dark-grey">Need both to behave like a button consistently in all browsers</p>
                     </div>
                     <div class="fragment fade-in">
                         <div class="tag medium-text"><code>&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span>&gt;</code></div>
-                        <p class="dark-grey">SPACE keypress/keydown needed to behave consistently in all browsers
+                        <p class="dark-grey">SPACE keypress/keydown needed to behave like a button consistently in all browsers
                         </p>
                     </div>
                 </section>
@@ -263,8 +305,8 @@
                     <div class="fragment fade-in">
                         <i class="fa fa-volume-up"></i>
                         <p class="dark-grey">
-                            “I’m a button”<br>
-                            “I’m a button; clickable”
+                            "I’m a button"<br>
+                            "I’m a button; clickable"
                         </p>
                     </div>
                 </section>
@@ -276,8 +318,8 @@
                     <div class="fragment fade-in">
                         <i class="fa fa-volume-up"></i>
                         <p class="dark-grey">
-                            “I’m a button; internal link.”<br>
-                            “Link; I’m a button.”
+                            "I’m a button; internal link."<br>
+                            "Link; I’m a button."
                         </p>
                     </div>
                 </section>
@@ -289,7 +331,7 @@
                     <div class="fragment fade-in">
                         <i class="fa fa-volume-up"></i>
                         <p class="dark-grey">
-                            “I’m a button; button.”
+                            "I’m a button; button."
                         </p>
                     </div>
                 </section>
@@ -319,16 +361,17 @@ $button.on('keydown', function(event) {
     }
 });
 </code></pre>
-<div class="fragment fade-in abs-right-top">
-    <i class="fa fa-volume-up"></i>
-    <p class="dark-grey">
-        “I’m a button.”
-    </p>
-</div>
 <pre class="fragment fade-in highlighted"><code data-trim class="javascript">
 //add ARIA role
 $button.attr('role','button');
 </code></pre>
+<div class="fragment fade-in abs-right-top">
+    <i class="fa fa-volume-up"></i>
+    <p class="dark-grey">
+        "I’m a button. Button."
+    </p>
+</div>
+
                     <div class="fragment"><div id="band-aid"></div></div>
                 </section>
 
@@ -371,11 +414,7 @@ $button.attr('role','button');
                             <td class="dark-grey">link</td>
                             <td class="no">No</td>
                         </tr>
-                        <tr>
-                            <th scope="row" class="dark-grey"><code>&lt;article&gt;</code></th>
-                            <td class="dark-grey">article</td>
-                            <td class="yes">Yes</td>
-                        </tr>
+
                         <tr>
                             <th scope="row" class="dark-grey"><code>&lt;button&gt;</code></th>
                             <td class="dark-grey">button</td>
@@ -385,6 +424,11 @@ $button.attr('role','button');
                             <th scope="row" class="dark-grey"><code>&lt;h1&gt;</code>...<code>&lt;h6&gt;</code></th>
                             <td class="dark-grey">heading</td>
                             <td class="no">No</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="dark-grey"><code>&lt;article&gt;</code></th>
+                            <td class="dark-grey">article</td>
+                            <td class="yes">Yes</td>
                         </tr>
                         <tr>
                             <th scope="row" class="dark-grey"><code>&lt;progress&gt;</code></th>
@@ -518,10 +562,10 @@ $button.attr('role','button');
                     <div class="fragment fade-in abs-right-top-0">
                         <i class="fa fa-volume-up"></i>
                         <p class="dark-grey">
-                            “Samsung 110-inch…; heading 1”<br>
-                            “List with 3 items”<br>
-                            “Product Info; list item”<br>
-                            “Product Info; heading 2”
+                            "Samsung 110-inch…; heading 1"<br>
+                            "List with 3 items"<br>
+                            "Product Info; list item"<br>
+                            "Product Info; heading 2"
                         </p>
                     </div>
                 </section>
@@ -720,7 +764,7 @@ $button.attr('role','button');
                 </section>
 
                 <section data-background="radial-gradient(circle farthest-corner at center center , #94cddd 0%, #4bacc6 100%) repeat scroll 0 0 #2b2b2b">
-                    <h2>Add Relationships With IDs</h2>
+                    <h2>Add Properties With ID References</h2>
                 </section>
 
                 <section  data-background="#fff" class="slide-align-left">
@@ -818,265 +862,735 @@ $button.attr('role','button');
                 </section>
 
                 <section  class="slide-align-left" data-background="#fff">
-
                     <div>
                         <i class="fa fa-volume-up"></i>
                         <p class="dark-grey">
-                            “Samsung 110-inch…; heading 1”<br>
-                            “Product Info; selected tab 1 of 3”
+                            "Samsung 110-inch…; heading 1"<br>
+                            "List with 3 items"<br>
+                            "Product Info; list item"<br>
+                            "Product Info; heading 2"
+                        </p>
+                    </div>
+                    <div class="fragment fade-in">
+                        <p class="dark-grey dark-blue-bg">
+                            "Samsung 110-inch…; heading 1"<br>
+                            "Product Info; selected tab 1 of 3"
                         </p>
                     </div>
                 </section>
 
-                <section data-background="img/rocks.jpg">
-                    <h2 class="large-text dark-blue">ARIA Rocks</h2>
-                    <div class="fragment fade-in" data-fragment-index="1"><div id="done-right">If Done Right</div></div>
-                </section>
 
                 <section data-background="radial-gradient(circle farthest-corner at center center , #94cddd 0%, #4bacc6 100%) repeat scroll 0 0 #2b2b2b">
                     <h2>WAI-ARIA Authoring Practices</h2>
                     <a class="dark-blue" href="http://www.w3.org/WAI/PF/aria-practices/">http://www.w3.org/WAI/PF/aria-practices/</a>
                 </section>
 
+                <section data-background="img/rocks.jpg">
+                    <h2 class="dark-blue">WAI-ARIA Rocks</h2>
+                    <div class="fragment fade-in" data-fragment-index="1"><div id="done-right">If Done Right</div></div>
+                </section>
+
+                <section data-background="img/guitars.jpg">
+                </section>
+
+                <section class="slide-align-left" data-background="radial-gradient(circle farthest-corner at center center , #fff 0%, #eee 100%) repeat scroll 0 0 #2b2b2b">
+                    <h3 class="dark-grey">Guitar Brands</h3>
+                    <ul class="dark-grey fa-ul">
+                        <li><i class="fa fa-li fa-bolt"></i>Fender</li>
+                        <li><i class="fa fa-li fa-bolt"></i>Gibson</li>
+                        <li><i class="fa fa-li fa-bolt"></i>Ibanez</li>
+                    </ul>
+                    <div class="fragment fade-in abs-right-top-60">
+                        <i class="fa fa-volume-up"></i>
+                        <p class="dark-grey">
+                            "Samsung 110-inch…; heading 1"<br>
+                            "List with 3 items"<br>
+                            "Product Info; list item"<br>
+                            "Product Info; heading 2"
+                        </p>
+                    </div>
+                </section>
+
+
+                <section class="slide-align-left" data-background="radial-gradient(circle farthest-corner at center center , #fff 0%, #eee 100%) repeat scroll 0 0 #2b2b2b">
+                    <h3 class="dark-grey">Guitar Brands</h3>
+                    <ul class="dark-grey fa-ul">
+                        <li><i class="fa fa-li fa-bolt"></i>Fender
+                            <ul>
+                                <li>Stratocaster</li>
+                                <li>Telecaster</li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-li fa-bolt"></i>Gibson
+                            <ul>
+                                <li>Les Paul</li>
+                                <li>SG</li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-li fa-bolt"></i>Ibanez
+                            <ul>
+                                <li>RGKP6</li>
+                                <li>Destroyer</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="slide-align-left" data-background="radial-gradient(circle farthest-corner at center center , #fff 0%, #eee 100%) repeat scroll 0 0 #2b2b2b">
+                    <h3 class="dark-grey">Guitar Brands</h3>
+                    <ul class="dark-grey fa-ul">
+                        <li><i class="fa fa-li fa-bolt"></i>Fender
+                            <ul>
+                                <li>Electric
+                                    <ul>
+                                        <li>Stratocaster</li>
+                                        <li>Telecaster</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-li fa-bolt"></i>Gibson
+                            <ul>
+                                <li>Les Paul</li>
+                                <li>SG</li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-li fa-bolt"></i>Ibanez
+                            <ul>
+                                <li>RGKP6</li>
+                                <li>Destroyer</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <section class="slide-align-left smaller-text" data-background="radial-gradient(circle farthest-corner at center center , #fff 0%, #eee 100%) repeat scroll 0 0 #2b2b2b">
+                    <h3 class="dark-grey">Guitar Brands</h3>
+                    <ul class="dark-grey fa-ul">
+                        <li><i class="fa fa-li fa-bolt"></i>Fender
+                            <ul>
+                                <li>Electric
+                                    <ul>
+                                        <li>Stratocaster</li>
+                                        <li>Telecaster</li>
+                                        <li>Jaguar</li>
+                                        <li>Jazzmaster</li>
+                                        <li>Mustang</li>
+                                    </ul>
+                                </li>
+                                <li>Acoustic
+                                    <ul>
+                                        <li>Dreadnought</li>
+                                        <li>Folk</li>
+                                        <li>Mandolin</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-li fa-bolt"></i>Gibson
+                            <ul>
+                                <li>Electric
+                                    <ul>
+                                        <li>Les Paul</li>
+                                        <li>SG</li>
+                                        <li>Explorer</li>
+                                        <li>Flying V</li>
+                                        <li>Firebird</li>
+                                    </ul>
+                                </li>
+                                <li>Acoustic
+                                    <ul>
+                                        <li>Super Jumbo</li>
+                                        <li>Jumbo</li>
+                                        <li>Square Shoulder</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li><i class="fa fa-li fa-bolt"></i>Ibanez
+                            <ul>
+                                <li>Electric
+                                    <ul>
+                                        <li>RGKP6</li>
+                                        <li>Destroyer</li>
+                                        <li>Roadcore</li>
+                                    </ul>
+                                </li>
+                                <li>Acoustic
+                                    <ul>
+                                        <li>Artwood</li>
+                                        <li>Resonator</li>
+                                        <li>Talman</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                    <div class="fragment fade-in abs-right-top-0  large-text">
+                        <i class="fa fa-volume-up"></i>
+                    </div>
+                </section>
+
+                <section class="slide-align-left"  data-background="radial-gradient(circle farthest-corner at center center , #fff 0%, #eee 100%) repeat scroll 0 0 #2b2b2b">
+                   <div id="guitar-brands-example" class="font-awesome-tree">
+                    <h3 class="dark-grey" id="guitar-brands-label">Guitar Brands</h3>
+                    <ul class="dark-grey" id="guitar-tree">
+                        <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Fender</span>
+                            <ul>
+                                <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Electric</span>
+                                    <ul>
+                                        <li><span class="tree-item-label">Stratocaster</span></li>
+                                        <li><span class="tree-item-label">Telecaster</span></li>
+                                        <li><span class="tree-item-label">Jaguar</span></li>
+                                        <li><span class="tree-item-label">Jazzmaster</span></li>
+                                        <li><span class="tree-item-label">Mustang</span></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Acoustic</span>
+                                    <ul>
+                                        <li><span class="tree-item-label">Dreadnought</span></li>
+                                        <li><span class="tree-item-label">Folk</span></li>
+                                        <li><span class="tree-item-label">Mandolin</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Gibson</span>
+                            <ul>
+                                <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Electric</span>
+                                    <ul>
+                                        <li><span class="tree-item-label">Les Paul</span></li>
+                                        <li><span class="tree-item-label">SG</span></li>
+                                        <li><span class="tree-item-label">Explorer</span></li>
+                                        <li><span class="tree-item-label">Flying V</span></li>
+                                        <li><span class="tree-item-label">Firebird</span></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Acoustic</span>
+                                    <ul>
+                                        <li><span class="tree-item-label">Super Jumbo</span></li>
+                                        <li><span class="tree-item-label">Jumbo</span></li>
+                                        <li><span class="tree-item-label">Square Shoulder</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Ibanez</span>
+                            <ul>
+                                <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Electric</span>
+                                    <ul>
+                                        <li><span class="tree-item-label">RGKP6</span></li>
+                                        <li><span class="tree-item-label">Destroyer</span></li>
+                                        <li><span class="tree-item-label">Roadcore</span></li>
+                                    </ul>
+                                </li>
+                                <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Acoustic</span>
+                                    <ul>
+                                        <li><span class="tree-item-label">Artwood</span></li>
+                                        <li><span class="tree-item-label">Resonator</span></li>
+                                        <li><span class="tree-item-label">Talman</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                    </div>
+
+                </section>
+
+
+                <section  data-background="#fff" class="slide-align-left">
+<pre class="wide"><code data-trim class="xml">
+<h1>Guitar Brands</h1>
+<ul>
+    <li>
+        <button class="toggle collapsed"></button>
+        <h2>Fender</h2>
+        <ul>
+            <li>
+                <button class="toggle collapsed"></button>
+                <h3>Electric</h3>
+                <ul>
+                    <li>Stratocaster</li>
+                    <li>Telecaster</li>
+                    <li>Jaguar</li>
+                </ul>
+            </li>
+            <li>
+                <button class="toggle collapsed"></button>
+                <h3>Acoustic</h3>
+                <ul>
+                    <li>Dreadnought</li>
+                    <li>Folk</li>
+                    <li>Mandolin</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</code>
+</pre>
+                </section>
+
+                <section  data-background="#fff" class="slide-align-left">
+<pre class="wide"><code data-trim class="xml">
+<h1>Guitar Brands</h1>
+<ul role="tree">
+    <li role="treeitem">
+        <button class="toggle collapsed"></button>
+        <h2>Fender</h2>
+        <ul role="group">
+            <li role="treeitem">
+                <button class="toggle collapsed"></button>
+                <h3>Electric</h3>
+                <ul role="group">
+                    <li role="treeitem">Stratocaster</li>
+                    <li role="treeitem">Telecaster</li>
+                    <li role="treeitem">Jaguar</li>
+                </ul>
+            </li>
+            <li role="treeitem">
+                <button class="toggle collapsed"></button>
+                <h3>Acoustic</h3>
+                <ul role="group">
+                    <li role="treeitem">Dreadnought</li>
+                    <li role="treeitem">Folk</li>
+                    <li role="treeitem">Mandolin</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</code>
+</pre>
+                </section>
+
+                <section  data-background="#fff" class="slide-align-left">
+<pre class="wide"><code data-trim class="xml">
+<h1>Guitar Brands</h1>
+<ul role="tree">
+    <li role="treeitem" aria-level="1" aria-expanded="false">
+        <button class="toggle collapsed"></button>
+        <h2>Fender</h2>
+        <ul role="group">
+            <li role="treeitem" aria-level="2" aria-expanded="false">
+                <button class="toggle collapsed"></button>
+                <h3>Electric</h3>
+                <ul role="group">
+                    <li role="treeitem" aria-level="3">Stratocaster</li>
+                    <li role="treeitem" aria-level="3">Telecaster</li>
+                    <li role="treeitem" aria-level="3">Jaguar</li>
+                </ul>
+            </li>
+            <li role="treeitem" aria-level="2" aria-expanded="false">
+                <button class="toggle collapsed"></button>
+                <h3>Acoustic</h3>
+                <ul role="group">
+                    <li role="treeitem" aria-level="3">Dreadnought</li>
+                    <li role="treeitem" aria-level="3">Folk</li>
+                    <li role="treeitem" aria-level="3">Mandolin</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</code>
+</pre>
+                </section>
+
+                <section  data-background="#fff" class="slide-align-left">
+<pre class="wide"><code data-trim class="xml">
+<h1 id="guitar-brands">Guitar Brands</h1>
+<ul role="tree" aria-labeledby="guitar-brands">
+    <li role="treeitem" aria-level="1" aria-expanded="false">
+        <button class="toggle collapsed"></button>
+        <h2 id="fender">Fender</h2>
+        <ul role="group" aria-labeledby="fender">
+            <li role="treeitem" aria-level="2" aria-expanded="false">
+                <button class="toggle collapsed"></button>
+                <h3 id="electric">Electric</h3>
+                <ul role="group" aria-labeledby="electric">
+                    <li role="treeitem" aria-level="3">Stratocaster</li>
+                    <li role="treeitem" aria-level="3">Telecaster</li>
+                    <li role="treeitem" aria-level="3">Jaguar</li>
+                </ul>
+            </li>
+            <li role="treeitem" aria-level="2" aria-expanded="false">
+                <button class="toggle collapsed"></button>
+                <h3 id="acoustic">Acoustic</h3>
+                <ul role="group" aria-labeledby="acoustic">
+                    <li role="treeitem" aria-level="3">Dreadnought</li>
+                    <li role="treeitem" aria-level="3">Folk</li>
+                    <li role="treeitem" aria-level="3">Mandolin</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</code>
+</pre>
+                </section>
+
+                <section data-background="radial-gradient(circle farthest-corner at center center , #94cddd 0%, #4bacc6 100%) repeat scroll 0 0 #2b2b2b">
+                    <h2>Managing Focus</h2>
+                </section>
+
+                <section class="slide-align-left"  data-background="#fff">
+                    <img class="centered" src="img/W3C_Logo.png" height="200px">
+                    <blockquote class="dark-grey">
+                        "…the user may navigate through the container by pressing additional keys, such as the arrow keys, to change the currently active descendant. Any additional press of the main navigation key (generally the TAB key) will move out of the container to the next widget…"
+                    </blockquote>
+                </section>
+
+                <section data-background="#fff">
+                    <table id="key-strokes" class="dark-grey small-text">
+                        <tr>
+                            <td class="pos-right"><div class="button-sample"><i class="fa fa-align-center fa-caret-down"></i></div><div class="button-sample"><i class="fa fa-align-center fa-caret-up"></i></div></td>
+                            <td><em>Up Arrow</em> and <em>Down Arrow</em> keys move between visible nodes</td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample"><i class="fa fa-align-center fa-caret-left"></i></div></td>
+                            <td><em>Left Arrow</em> key on an expanded node closes the node.</td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample"><i class="fa fa-align-center fa-caret-left"></i></div></td>
+                            <td><em>Left Arrow</em> key on a closed or end node moves focus to the node's parent.</td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample"><i class="fa fa-align-center fa-caret-right"></i></div></td>
+                            <td><em>Right Arrow</em> key expands a closed node, moves to the first child of an open node, or does nothing on an end node.</td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample text"><span>control</span></div><div class="button-sample"><i class="fa fa-align-center fa-caret-right"></i></div></td>
+                            <td><em>Control</em> + <em>Arrow</em> to an item with the keyboard focuses the item (but does not select it). Previous selections are maintained, provided that the Control key is not released or that some other keyboard function is not performed.</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section data-background="#fff">
+                    <table id="key-strokes" class="dark-grey small-text">
+                        <tr>
+                            <td class="pos-right"><div class="button-sample text"><span>shift</span></div><div class="button-sample"><i class="fa fa-align-center fa-caret-up"></i></div></td>
+                            <td><em>Shift</em> + <em>Up</em> Arrow extends selection up one node.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample text"><span>shift</span></div><div class="button-sample"><i class="fa fa-align-center fa-caret-down"></i></div></td>
+                            <td><em>Shift</em> + <em>Down</em> Arrow extends selection down one node.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample text"><span>enter</span></div></td>
+                            <td><em>Enter</em> key performs the default action on end nodes.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample text">A</div><i class="fa fa-align-center fa-caret-right"></i>&nbsp;<div class="button-sample">Z</div></td>
+                            <td>Typing a letter key moves focus to the next instance of a visible node whose title begins with that letter.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample text"><span>home</span></div></td>
+                            <td><em>Home</em> key moves to the top node in the tree view.</td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample text"><span>end</span></div></td>
+                            <td><em>End</em> key moves to the last visible node in the tree view.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pos-right"><div class="button-sample text"><span>control</span></div><div class="button-sample text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div></td>
+                            <td><em>Control</em> + <em>Space</em> with focus on an item toggles the selection of the item.
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section data-background="#fff">
+                    <table id="key-strokes" class="dark-grey small-text">
+
+                <tr>
+                    <td class="pos-right"><div class="button-sample text"><span>shift</span></div><div class="button-sample text"><span>home</span></div></td>
+                    <td><em>Shift</em> + <em>Home</em> extends selection up to the top-most node.</td>
+                </tr>
+                <tr>
+                    <td class="pos-right"><div class="button-sample text"><span>shift</span></div><div class="button-sample text"><span>down</span></div></td>
+                    <td><em>Shift</em> + <em>Page Down</em> extends selection down to the last node.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pos-right"><div class="button-sample text"><span>*</span></div></td>
+                    <td><em>Asterisk</em> on keypad expands all nodes.
+                    </td>
+                </tr>
+                </table>
+                </section>
+
+                <section  data-background="#fff" class="slide-align-left">
+<pre class="wide"><code data-trim class="xml">
+<h1 id="guitar-brands">Guitar Brands</h1>
+<ul role="tree" aria-labeledby="guitar-brands">
+    <li role="treeitem" aria-level="1" aria-expanded="false">
+        <button class="toggle collapsed"></button>
+        <h2 id="fender">Fender</h2>
+        <ul role="group" aria-labeledby="fender">
+            <li role="treeitem" aria-level="2" aria-expanded="false">
+                <button class="toggle collapsed"></button>
+                <h3 id="electric">Electric</h3>
+                <ul role="group" aria-labeledby="electric">
+                    <li role="treeitem" aria-level="3">Stratocaster</li>
+                    <li role="treeitem" aria-level="3">Telecaster</li>
+                    <li role="treeitem" aria-level="3">Jaguar</li>
+                </ul>
+            </li>
+            <li role="treeitem" aria-level="2" aria-expanded="false">
+                <button class="toggle collapsed"></button>
+                <h3 id="acoustic">Acoustic</h3>
+                <ul role="group" aria-labeledby="acoustic">
+                    <li role="treeitem" aria-level="3">Dreadnought</li>
+                    <li role="treeitem" aria-level="3">Folk</li>
+                    <li role="treeitem" aria-level="3">Mandolin</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</code>
+</pre>
+                </section>
+
+                <section  data-background="#fff" class="slide-align-left">
+<pre class="wide"><code data-trim class="xml">
+<h1 id="guitar-brands">Guitar Brands</h1>
+<ul role="tree" aria-labeledby="guitar-brands" aria-activedescendant="n-0">
+    <li role="treeitem" aria-level="1" aria-expanded="false" aria-selected="true" id="n-0">
+        <button class="toggle collapsed"></button>
+        <h2 id="fender">Fender</h2>
+        <ul role="group" aria-labeledby="fender">
+            <li role="treeitem" aria-level="2" aria-expanded="false" aria-selected="false" id="n-0-0">
+                <button class="toggle collapsed"></button>
+                <h3 id="electric">Electric</h3>
+                <ul role="group" aria-labeledby="electric">
+                    <li role="treeitem" aria-level="3" aria-selected="false" id="n-0-0-0">Stratocaster</li>
+                    <li role="treeitem" aria-level="3" aria-selected="false" id="n-0-0-1">Telecaster</li>
+                    <li role="treeitem" aria-level="3" aria-selected="false" id="n-0-0-2">Jaguar</li>
+                </ul>
+            </li>
+            <li role="treeitem" aria-level="2" aria-expanded="false" aria-selected="false" id="n-0-1">
+                <button class="toggle collapsed"></button>
+                <h3 id="acoustic">Acoustic</h3>
+                <ul role="group" aria-labeledby="acoustic">
+                    <li role="treeitem" aria-level="3" aria-selected="false" id="n-0-1-0">Dreadnought</li>
+                    <li role="treeitem" aria-level="3" aria-selected="false" id="n-0-1-1">Folk</li>
+                    <li role="treeitem" aria-level="3" aria-selected="false" id="n-0-1-2">Mandolin</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+</code>
+</pre>
+                </section>
+
+
+                <section class="slide-align-left"  data-background="radial-gradient(circle farthest-corner at center center , #fff 0%, #eee 100%) repeat scroll 0 0 #2b2b2b">
+                    <div id="guitar-brands-example2" class="font-awesome-tree">
+                        <h3 class="dark-grey" id="guitar-brands2-label">Guitar Brands</h3>
+                        <ul class="dark-grey" id="guitar-tree2">
+                            <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Fender</span>
+                                <ul>
+                                    <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Electric</span>
+                                        <ul>
+                                            <li><span class="tree-item-label">Stratocaster</span></li>
+                                            <li><span class="tree-item-label">Telecaster</span></li>
+                                            <li><span class="tree-item-label">Jaguar</span></li>
+                                            <li><span class="tree-item-label">Jazzmaster</span></li>
+                                            <li><span class="tree-item-label">Mustang</span></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Acoustic</span>
+                                        <ul>
+                                            <li><span class="tree-item-label">Dreadnought</span></li>
+                                            <li><span class="tree-item-label">Folk</span></li>
+                                            <li><span class="tree-item-label">Mandolin</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Gibson</span>
+                                <ul>
+                                    <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Electric</span>
+                                        <ul>
+                                            <li><span class="tree-item-label">Les Paul</span></li>
+                                            <li><span class="tree-item-label">SG</span></li>
+                                            <li><span class="tree-item-label">Explorer</span></li>
+                                            <li><span class="tree-item-label">Flying V</span></li>
+                                            <li><span class="tree-item-label">Firebird</span></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Acoustic</span>
+                                        <ul>
+                                            <li><span class="tree-item-label">Super Jumbo</span></li>
+                                            <li><span class="tree-item-label">Jumbo</span></li>
+                                            <li><span class="tree-item-label">Square Shoulder</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Ibanez</span>
+                                <ul>
+                                    <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Electric</span>
+                                        <ul>
+                                            <li><span class="tree-item-label">RGKP6</span></li>
+                                            <li><span class="tree-item-label">Destroyer</span></li>
+                                            <li><span class="tree-item-label">Roadcore</span></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fa fa-caret-square-o-down"></i><span class="tree-item-label">Acoustic</span>
+                                        <ul>
+                                            <li><span class="tree-item-label">Artwood</span></li>
+                                            <li><span class="tree-item-label">Resonator</span></li>
+                                            <li><span class="tree-item-label">Talman</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
                 <section>
                     <h2>Test</h2>
                 </section>
 
-                <section data-background="img/guitars.jpg">
+                <section  data-background="#fff">
+                    <img class="centered" src="img/screenreadersused.png" alt="Chart of screen reader usage showing decreases in JAWS and increases in VoiceOver and NVDA.">
+                    <p><br><a class="dark-blue" href="http://webaim.org">Thanks WebAIM!</a></p>
+                </section>
+                <section  data-background="#fff">
+                    <table id="browser-survey" class="dark-grey">
+                        <caption>When using your primary screen reader, which browser do you use most often?</caption>
+                        <tbody><tr><th>Browser</th><th># of Respondents</th><th>% of Respondents</th></tr>
+                        <tr><td>Internet Explorer 9+</td><td>556</td><td>38.9%</td></tr>
+                        <tr><td>Firefox</td><td>346</td><td>24.2%</td></tr>
+                        <tr><td>Internet Explorer 8</td><td>180</td><td>12.6%</td></tr>
+                        <tr><td>Safari</td><td>143</td><td>10.0%</td></tr>
+                        <tr><td>Internet Explorer 6</td><td>60</td><td>4.2%</td></tr>
+                        <tr><td>Internet Explorer 7</td><td>43</td><td>3.0%</td></tr>
+                        <tr><td>Chrome</td><td>40</td><td>2.8%</td></tr>
+                        <tr><td>Others</td><td>58</td><td>4.1%</td></tr>
+                        </tbody></table>
+                    <p><br><a class="dark-blue" href="http://webaim.org">Thanks WebAIM!</a></p>
                 </section>
 
                 <section>
                     <h2>Less Classes</h2>
                 </section>
 
+                <section class="slide-align-left"  data-background="#fff">
+                    <img class="centered" src="img/W3C_Logo.png" height="200px">
+                    <blockquote class="dark-grey">
+                        "…authors could conceivably design their own <em>document language</em> based on elements with almost no associated presentation…and assigning style information through the <code class="tag"><span class="attribute">class</span></code> attribute. <em>Authors should avoid this practice…the structural elements of [HTML] often have recognized and accepted meanings and author-defined classes may not.</em>"
+                    </blockquote>
+                </section>
+
+                <section class="slide-align-left" data-background="#fff">
+<pre><code data-trim class="css">
+ul[role="tree"] {
+    list-style-type: none;
+
+    &:focus {
+        outline: 1px dotted #0000ff;
+    }
+
+    li {
+        list-style-type: none;
+
+        &[aria-selected="true"]  {
+            outline: none;
+        }
+
+        &[aria-expanded="false"] > ul {
+            display: none;
+        }
+
+        &[aria-expanded="true"] > ul {
+            display: block;
+        }
+    }
+}
+</code></pre>
+                </section>
+                <section class="slide-align-left" data-background="#fff">
+<pre><code data-trim class="javascript">
+var $button= $('[role="button"]');
+    $button.on('click', function() {
+    //do something awesome!
+});
+</code></pre>
+                </section>
+
+
+                <section>
+                    <h2>Take Aways!</h2>
+                </section>
+
                 <section data-background="radial-gradient(circle farthest-corner at center center , #94cddd 0%, #4bacc6 100%) repeat scroll 0 0 #2b2b2b">
                     <h2>Start With the Basics</h2>
                 </section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+                <section data-background="#fff">
+                    <div class="wide">
+                        <h3 class="no">Don't Do This</h3>
+                        <div class="tag small-text"><code>&lt;<span class="title">span</span> <span class="attribute">role</span>=<span class="value">"button"</span> <span class="attribute">tabindex</span>=<span class="value">"0"</span>&gt;<span class="dark-grey">I’m a Button, Really</span>&lt;<span class="title">/span</span>&gt;</code></div>
+                        <div class="tag small-text"><code>&lt;<span class="title">div</span> <span class="attribute">role</span>=<span class="value">"heading"</span> <span class="attribute">aria-level</span>=<span class="value">"1"</span>&gt;<span class="dark-grey">I’m a Heading, Really</span>&lt;<span class="title">/div</span>&gt;</code></div>
+                    </div>
+                    <div class="fragment fade-in wide">
+                        <h3 class="yes">Do This</h3>
+                        <div class="tag small-text"><code>&lt;<span class="title">button</span>&gt;<span class="dark-grey">I'm a Button</span>&lt;<span class="title">/button</span>&gt;</code></div>
+                        <div class="tag small-text"><code>&lt;<span class="title">h1</span>&gt;<span class="dark-grey">I'm a Heading</span>&lt;<span class="title">/h1</span>&gt;</code></div>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+                    </div>
+                </section>
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+                <section class="slide-align-left" data-background="radial-gradient(circle farthest-corner at center center , #94cddd 0%, #4bacc6 100%) repeat scroll 0 0 #2b2b2b">
+                    <h2>ARIA is</h2>
+                    <h2>NOT Magic</h2>
+                </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+                <section class="slide-align-left" data-background="radial-gradient(circle farthest-corner at center center , #94cddd 0%, #4bacc6 100%) repeat scroll 0 0 #2b2b2b">
+                    <h2>ARIA needs</h2>
+                    <h2>to be Tested</h2>
+                </section>
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+                <section class="slide-align-left" data-background="radial-gradient(circle farthest-corner at center center , #94cddd 0%, #4bacc6 100%) repeat scroll 0 0 #2b2b2b">
+                    <h2>ARIA is</h2>
+                    <h2>Awesome</h2>
+                </section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+                <section class="slide-align-left" data-background="radial-gradient(circle farthest-corner at center center , #94cddd 0%, #4bacc6 100%) repeat scroll 0 0 #2b2b2b">
+                    <h2>ARIA needs</h2>
+                    <h2>Awesome Developers</h2>
+                </section>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+                <section>
+                    <h2>Thanks for your time</h2>
+                </section>
 
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+                <section data-background="img/children_raising_hands.jpg">
+                    <h2>Questions?</h2>
+                </section>
 
 			</div>
 
@@ -1086,11 +1600,37 @@ function linkify( selector ) {
 		<script src="js/reveal.min.js"></script>
 		<script src="js/jquery-1.11.0.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.a11yTree.min.js"></script>
 
 		<script>
             $(function() {
                 $( "#tabs" ).tabs();
             });
+
+            $('#guitar-brands-example > ul').a11yTree({
+                treeLabelId :'guitar-brands-label',
+                toggleSelector : 'i.fa',
+                treeItemLabelSelector : '.tree-item-label',
+                onCollapse: function($item, event) {
+                    $item.children('.at-toggle').removeClass('fa-caret-square-o-up').addClass('fa-caret-square-o-down');
+                },
+                onExpand: function($item, event) {
+                    $item.children('.at-toggle').removeClass('fa-caret-square-o-down').addClass('fa-caret-square-o-up');
+                }
+            });
+
+            $('#guitar-brands-example2 > ul').a11yTree({
+                treeLabelId :'guitar-brands2-label',
+                toggleSelector : 'i.fa',
+                treeItemLabelSelector : '.tree-item-label',
+                onCollapse: function($item, event) {
+                    $item.children('.at-toggle').removeClass('fa-caret-square-o-up').addClass('fa-caret-square-o-down');
+                },
+                onExpand: function($item, event) {
+                    $item.children('.at-toggle').removeClass('fa-caret-square-o-down').addClass('fa-caret-square-o-up');
+                }
+            });
+
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
